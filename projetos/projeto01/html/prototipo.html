@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/stylesheet.css"/>
+    <title>propotipo</title>
+</head>
+<body>
+    <h1>Cadastro Ponto de Vista</h1>
+    <h2>Formulario para cadastro no DB Ponto de Vista</h2>
+    <form action="" method="post" name="CADASTRO">
+        
+        <label>solicitante</label><br>
+        <input type="text" id="solicitante" name="solicitante[SOLICITANTE]"><br>
+        <label>login</label><br>
+        <input type="email" id="login" name="login[LOGIN]"><br>
+        <label>senha</label><br>
+        <input type="text" id="senha" name="senha[SENHA]"><br>
+        <label>data do cadastro</label><br>
+        <input type="date" id="data cdt" name="data cdt[DATA CDT]"><br>
+        <label>status</label><br>
+        <select name="status" id="status[STATUS]">
+            <option value="pendente">pendente</option>
+            <option value="pago">pago</option>
+            <option value="cancelado">cancelado</option>
+        </select><br>
+        <label>data do pagamento</label><br>
+        <input type="date" id="datapgt" name="data pgt[DATA PGT]"><br>
+        <label>quem paga</label><br>
+        <select name="pagamento" id="pagamento" name="quem paga[QUEM PAGA]">
+            <option value="cliente">cliente</option>
+            <option value="lis">lis</option>
+        </select><br>
+        <input type="submit" value="cadastrar" id="cadastrar" name="cadastrar">
+        <input type="reset" value="reset" id="reset" name="reset">
+    </form>
+</body>
+</html>
